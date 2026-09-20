@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { DemoVideo } from "@/components/DemoVideo";
 import { Pill } from "@/components/Pill";
 import { formatEUR, formatWhen, kindLabel } from "@/lib/format";
 import { useStore } from "@/lib/store";
@@ -44,6 +45,10 @@ export default function DemoOverviewPage() {
           </Link>
         </div>
       </header>
+
+      <section id="walkthrough">
+        <DemoVideo />
+      </section>
 
       <section className="grid gap-4 sm:grid-cols-3">
         {[

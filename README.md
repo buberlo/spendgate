@@ -47,7 +47,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000). The core-flows walkthrough plays on `/` and `/demo` (`public/demo/core-flows.mp4`).
 
 ```bash
 npm test          # policy engine + hash-chain tests

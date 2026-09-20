@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BrandMark } from "@/components/BrandMark";
+import { DemoVideo } from "@/components/DemoVideo";
 
 const wedges = [
   {
@@ -30,6 +31,9 @@ export default function HomePage() {
       <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-5">
         <BrandMark />
         <nav className="flex items-center gap-3 text-sm">
+          <Link href="/#walkthrough" className="hidden text-ink-soft hover:text-ink sm:inline">
+            Watch
+          </Link>
           <Link href="/#wedge" className="hidden text-ink-soft hover:text-ink sm:inline">
             Thesis
           </Link>
@@ -58,8 +62,14 @@ export default function HomePage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              href="/demo"
+              href="#walkthrough"
               className="rounded-full bg-seal px-5 py-2.5 text-paper hover:bg-seal-deep"
+            >
+              Watch the demo
+            </Link>
+            <Link
+              href="/demo"
+              className="rounded-full border border-line px-5 py-2.5 hover:bg-paper-2"
             >
               Run the sandbox
             </Link>
@@ -109,6 +119,20 @@ export default function HomePage() {
             </p>
           </div>
         </aside>
+      </section>
+
+      <section id="walkthrough" className="mx-auto w-full max-w-6xl px-4 pb-16">
+        <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-seal">
+          On-site walkthrough
+        </p>
+        <h2 className="mt-3 font-serif text-4xl">See the core flows</h2>
+        <p className="mt-3 max-w-2xl text-ink-soft">
+          Landing → mandate desk → simulated intent → multi-principal approval →
+          Dispute Shield evidence pack. Same recording is on the live sandbox.
+        </p>
+        <div className="mt-8">
+          <DemoVideo />
+        </div>
       </section>
 
       <div className="rule mx-auto w-full max-w-6xl" />
