@@ -62,10 +62,6 @@ body {
   font-family: var(--font-instrument), ui-serif, Georgia, serif;
 }
 
-a {
-  color: inherit;
-}
-
 ::selection {
   background: #ead8a8;
 }
